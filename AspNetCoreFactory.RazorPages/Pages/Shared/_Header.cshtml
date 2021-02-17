@@ -1,0 +1,21 @@
+﻿<header>AspNet Core 5.0 Razor Pages Application</header>
+
+<div class="nav-area mb-10">
+    <div class="container clearfix">
+        <div class="float-left">
+            <ul class="nav">
+                <li class='nav-item'><a class='nav-link @(ViewBag.Menu == "Welcome" ? "active" : "")' href="/">Welcome</a></li>
+                <li class='nav-item'><a class='nav-link @(ViewBag.Menu == "Customer" ? "active" : "")' href="/customer">Customers</a></li>
+                <li class='nav-item'><a class='nav-link @(ViewBag.Menu == "Products" ? "active" : "")' href="/products">Products</a></li>
+                <li class='nav-item'><a class='nav-link @(ViewBag.Menu == "Orders" ? "active" : "")' href="/orders">Orders</a></li>
+                <li class='nav-item'><a class='nav-link @(ViewBag.Menu == "Admin" ? "active" : "")' href="/admin">Admin</a></li>
+            </ul>
+        </div>
+        @*<div class="float-right">
+        <ul class="nav">
+        <li class='nav-item'><a class='nav-link @(ViewBag.Menu == "Architecture" ? "active" : "")' href="/architecture">Architecture</a></li>
+        <li class='nav-item'><a class='nav-link @(ViewBag.Menu == "DesignExcellence" ? "active" : "")' href="/designexcellence">Design Excellence</a></li>
+        </ul>
+        </div>*@
+    </div>
+</div>

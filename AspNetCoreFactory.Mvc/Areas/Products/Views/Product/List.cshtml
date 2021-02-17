@@ -1,0 +1,60 @@
+﻿@model AspNetCoreFactory.Mvc.Areas.Products.Models.List
+@{
+    ViewBag.Title = "Products";
+}
+<h1>Products</h1>
+
+<div class="row">
+    <div class="col">
+
+        <table class="table table-sm table-hover table-list">
+            <tr>
+                <th class="table-list-actions no-hover">
+                    <a class="btn btn-xs btn-light" href="/products/edit">New Product</a>
+                </th>
+                <th>Name</th>
+                <th>Price</th>
+                <th class="text-center">Orders</th>
+                <th></th>
+            </tr>
+
+            @if (Model.Products.Count() == 0)
+            {
+            <tr><td colspan="5"><div class="no-items">No items to display</div></td></tr>
+            }
+
+            @foreach (var product in Model.Products)
+            {
+            <tr>
+                <td>
+                    <form method="post">
+                         <input type="hidden" name="productId" value="@product.Id" />
+                        <a class='btn btn-xs btn-light' href="/products/edit/@product.Id">Edit</a>&nbsp;
+                      <a class='btn btn-xs btn-light @(product.TotalOrders > 0 ? "disabled" : "")' href = "/products/delete/@product.Id">
+                        Delete</a>
+                       
+                    </form>
+                </td>
+                <td><a class="table-list-link" href="/products/@product.Id">@product.Name</a></td>
+                <td>@product.FormattedPrice</td>
+                <td class="text-center">
+                    @if (product.TotalOrders > 0)
+                        {
+                    <form action="/orders">
+                        <input type="hidden" name="productId" value="@product.Id" />
+                        <button type="submit" class="btn btn-xs btn-light">@product.TotalOrders</button>
+                    </form>
+                            }
+                            else
+                            {
+                    @product.TotalOrders
+                            }
+
+                </td>
+                <td><a class="table-list-link" href="/orders/edit/0/@product.Id/">Add Order</a></td>
+            </tr>
+            }
+        </table>
+
+    </div>
+</div> 

@@ -1,0 +1,22 @@
+﻿@page "/customers"
+@using AspNetCoreFactory.BlazorWebAssembly.Components
+
+<div class="row">
+    <div class="col-md-10">
+        @*Place for search and sort*@
+    </div>
+    <div class="col-md-2">
+        <a class="btn btn-success mb-1" href="/createcustomer">New Customer</a>
+    </div>
+
+</div>
+<div class="row">
+    <div class="col">
+        <CustomerTable OnDelete="DeleteCustomer" CustomersEntity="CustomersDtoList"></CustomerTable>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        @*Place for pagination*@
+    </div>
+</div>

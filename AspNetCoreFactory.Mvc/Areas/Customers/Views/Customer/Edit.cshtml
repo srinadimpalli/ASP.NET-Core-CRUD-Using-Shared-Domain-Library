@@ -1,0 +1,45 @@
+﻿@model AspNetCoreFactory.Mvc.Areas.Customers.Models.Edit
+@{
+    var title = Model.Id == 0 ? "New Customer" : "Edit Customer";
+    ViewBag.Title = title;
+}
+<h1>@title</h1>
+
+<form method="post">
+
+    <div class="row pb-100">
+        <div class="col-12 col-md-6">
+            <div class="form-group row">
+                <label for="FirstName" class="col-sm-4 col-form-label">First Name</label>
+                <div class="col-sm-8">
+                    <input type="text" asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="LastName" class="col-sm-4 col-form-label">Last Name</label>
+                <div class="col-sm-8">
+                    <input type="text" asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName"></span>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="Email" class="col-sm-4 col-form-label">Email</label>
+                <div class="col-sm-8">
+                    <input type="text" asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email"></span>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-sm-4">&nbsp;</label>
+                <div class="col-sm-8 ">
+                    <hr />
+                    <button id="save" class="btn btn-light btn-sm" type="submit">&nbsp; Save &nbsp;</button>&nbsp;&nbsp;
+                    <a class="btn btn-light btn-sm" href="/customers">Cancel</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</form>

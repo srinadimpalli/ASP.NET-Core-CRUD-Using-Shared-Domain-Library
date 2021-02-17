@@ -1,0 +1,67 @@
+﻿/* 
+ *   Dofactory.com 
+ *  (c) Copyright 2018. All rights reserved.
+*/
+
+body { font-family: 'Open Sans', sans-serif, Arial; font-size: 15px; }
+header { height: 40px; background: #0070D2; text-align: center; padding-top: 10px; font-weight: normal; color: white; }
+footer { margin-bottom: 25px; }
+
+.nav-area { background: #f2f2f2; }
+.nav-link { color: #000; font-weight: normal; height: 38px; padding-top: 7px; background: #f2f2f2; }
+.nav-link:hover, .nav-link.active { color: #000; background: #e8e8e8; }
+
+h1 { font-size: 24px; padding: 30px 5px; }
+
+/* ============ 
+   Buttons  
+   ============ */
+
+.btn-light { color: #212529; background-color: #f0f1f2; border-color: #ccc; text-transform: none; }
+.btn-light:hover { color: #212529; background-color: #e8e9ea; border-color: #bbb; }
+
+.btn-xs, .btn-group-xs > .btn { padding: 0.135rem 0.26rem; font-size: 0.85rem; line-height: 1.3; border-radius: 0.15rem; }
+
+/* ============ 
+  Tables  
+  =============*/
+
+.table-sm th,
+.table-sm td { padding: 0.4rem; }
+
+.table-list th { font-weight: normal; text-transform: uppercase; font-size: 13px; overflow: hidden; text-overflow: ellipsis; }
+.table-list th:hover { background: #f9f9f9; }
+.table-list th.no-hover:hover { background: #fff !important; }
+.table-list th a { color: #333; }
+.table-list th a:hover,
+.table-list th a:focus { color: rgb(0, 95, 178); text-decoration: none; }
+
+.table-list-link { text-decoration: none; color: #0070D2; }
+.table-list-link:hover { text-decoration: underline; color: #0070D2; }
+.table-list-actions { width: 140px; text-transform: none !important; }
+
+.table-hover tbody tr:hover td { background-color: #fafafa; }
+.table-hover tbody tr:first-child:hover { background-color: white; }
+
+.table-header, .table-head:hover { background: #f8f8f8 !important; }
+
+.no-items, td .no-items { padding: 20px 10px 100px 25px !important; }
+
+/* ============ 
+   Forms
+   =============*/
+
+.form-control { font-size: 15px; }
+.form-group { margin-bottom: 8px; }
+
+.input-validation-error { border: solid 1px #bbb; outline: 0; }
+.field-validation-error { color: #E85C41; font-size: 12px; }
+
+/* ============ 
+   Date picker
+   =============*/
+
+.datepicker { font-size: 13px; }
+
+.datepicker td,
+.datepicker th { text-align: center; width: 24px; height: 24px; }

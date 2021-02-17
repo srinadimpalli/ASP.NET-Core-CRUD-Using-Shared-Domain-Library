@@ -1,0 +1,46 @@
+﻿@page "/admin"
+@model AspNetCoreFactory.RazorPages.Pages.Admin.ListModel
+@{
+}
+<h1>Admin</h1>
+
+<div class="row">
+    <div class="col-sm-6">
+        <table class="table table-list table-hover w-90">
+            <tr>
+                <th>Table</th>
+                <th class="text-center">Count</th>
+            </tr>
+            <tr>
+                <td>Customers</td>
+                <td class="text-center">
+                    <a class='btn btn-xs btn-light' href="/customer">@Model.TotalCustomers</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Products</td>
+                <td class="text-center">
+                    <a class='btn btn-xs btn-light' href="/products">@Model.TotalProducts</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Orders</td>
+                <td class="text-center">
+                    <a class='btn btn-xs btn-light' href="/orders">@Model.TotalOrders</a>
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+    @*<div class="col-sm-6">
+
+    <form method="post" action="/admin/calculate" asp-antiforgery="true">
+    Recalculate Order Statistics: &nbsp;&nbsp;<button type="submit" class="btn btn-sm btn-light">Start</button>
+    &nbsp;&nbsp;&nbsp;<span style="color:orangered;">@Model.Result</span>
+    </form>
+
+    </div>*@
+</div>
+
+<div class="pt-140"></div>

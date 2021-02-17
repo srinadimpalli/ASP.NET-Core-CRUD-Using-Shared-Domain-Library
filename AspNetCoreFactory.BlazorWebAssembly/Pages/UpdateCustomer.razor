@@ -1,0 +1,46 @@
+﻿@page "/UpdateCustomer/{id:int}"
+<h2>Update Customer Form</h2>
+@if (_customerForUpdateDto != null)
+{
+
+<EditForm EditContext="_editContext" OnValidSubmit="Update" class="card card-body bg-light mt-5">
+    <DataAnnotationsValidator />
+    <div class="form-group row">
+        <label for="name" class="col-md-2 col-form-label">First Name:</label>
+        <div class="col-md-10">
+            <InputText id="firstname" class="form-control" @bind-Value="_customerForUpdateDto.FirstName" />
+            <ValidationMessage For="@(() => _customerForUpdateDto.FirstName)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="description" class="col-md-2 col-form-label">Last Name:</label>
+        <div class="col-md-10">
+            <InputText id="lastName" class="form-control"
+            @bind-Value="_customerForUpdateDto.LastName" />
+            <ValidationMessage For="@(() => _customerForUpdateDto.LastName)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="supplier" class="col-md-2 col-form-label">Email:</label>
+        <div class="col-md-10">
+            <InputText id="email" class="form-control" @bind-Value="_customerForUpdateDto.Email" />
+            <ValidationMessage For="@(() => _customerForUpdateDto.Email)" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-right">
+            <button type="submit" class="btn btn-success"
+            disabled="@formInvalid">
+                Update
+            </button>
+        </div>
+    </div>
+</EditForm>
+<br />
+<div class="row">
+    <div class="col">
+        <a href="/customers" class="btn btn-success">Back</a>
+    </div>
+</div>
+}

@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>@ViewBag.Title - AspNet Core Razor Pages</title>
+    <meta name="keywords" content="@ViewBag.Keywords">
+    <meta name="description" content="@ViewBag.Description">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico">
+
+    <partial name="_Css" />
+
+</head>
+<body>
+
+    <partial name="_Header" />
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    <partial name="_Footer" />
+
+    <partial name="_Js" />
+
+    @RenderSection("scripts", required: false)
+    @*@section scripts{
+   <partial name="_ValidationScriptsPartial" />
+}*@
+</body>
+</html>

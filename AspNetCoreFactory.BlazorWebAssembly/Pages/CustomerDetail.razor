@@ -1,0 +1,36 @@
+﻿@page "/customer/{customerId:int}"
+<h3>Customer Detail component</h3>
+
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col">
+                <h2>@Customer.FullName</h2>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                @Customer.FirstName
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                @Customer.LastName
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                @Customer.TotalOrdersFormatted
+            </div>
+        </div>
+
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col">
+        <a href="/customers" class="btn btn-success">Back</a>
+    </div>
+</div>
+
