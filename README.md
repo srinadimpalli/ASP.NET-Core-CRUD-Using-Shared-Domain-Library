@@ -1,4 +1,4 @@
-# AspNetCoreFactory
+# Enterprise .NET Core Applicatin with Shared Library.
 This application demonstrates all 4 CRUD operations (Create Read, Update, Delete) and several CD (Clean Design) principles in a simple ASP.NET Core applications(MVC,Razor Pages, Blazor) and WebApi project using shared Domain model.
 
 # Architecture
