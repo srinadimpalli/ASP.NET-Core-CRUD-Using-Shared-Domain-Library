@@ -1,5 +1,6 @@
 # AspNetCoreFactory
-AspNet Core 5.0 Shared domain used in MVC,Razor Pages, Blazor, Web API
+This application demonstrates all 4 CRUD operations (Create Read, Update, Delete) and several CD (Clean Design) principles in a simple ASP.NET Core applications(MVC,Razor Pages, Blazor) and WebApi project using shared Domain model.
+
 # Architecture
 
 The current version of Enterprise .NET solution on Github includes a shared .NET Standard Class Library, used by multiple web app projects. The web apps include:
