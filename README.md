@@ -19,8 +19,7 @@ These instructions will get you a copy of the project up and running on your loc
 What things you need to run the application
   1. Visual Studio 2019
   2. .Net 5, ASP.NET Core Framework
-  3. Entity Framework Core (In Memory)
-  4. AutoMapper(Optional)
+ 
 
 ## Blazor WebAssembly Application
 ![](/design/screenshots/blazor_crud.PNG "Blazor WebAssembly CRUD")
