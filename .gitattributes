@@ -1,9 +1,13 @@
 ###############################################################################
 # Set default behavior to automatically normalize line endings.
 ###############################################################################
-
+* text=auto
 *.cs linguist-detectable=true
 
+# Custom for Visual Studio
+*.cs     diff=csharp
+*.sln    merge=union
+*.csproj merge=union
 ###############################################################################
 # Set default behavior for command prompt diff.
 #
