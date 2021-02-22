@@ -13,7 +13,7 @@ The current version of Enterprise .NET Core solution on Github includes a shared
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
-
+Shared domain uses Entity Framewrok Core In-Memory database, so connection string required.
 ## Prerequisites
 
 What things you need to run the application
